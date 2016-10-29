@@ -1,7 +1,7 @@
 {
     "name": "tpl",
     "displayName": "Templex",
-    "description": "Templex Language Support",
+    "description": "Templex Colorization",
     "version": "0.0.1",
     "publisher": "sleutho",
 	"license": "MIT",

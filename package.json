@@ -5,9 +5,11 @@
     "version": "0.0.1",
     "publisher": "sleutho",
 	"license": "MIT",
-    "engines": {
-        "vscode": "^1.5.0"
-    },
+	"author": {
+		"email": "sascha.leuthold@live.com",
+		"name": "Sascha Leuthold",
+		"url": "https://github.com/sleutho"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/sleutho/templex/"
@@ -15,7 +17,10 @@
 	"bugs": {
 		"url": "https://github.com/sleutho/templex/issues"
 	},
-	"icon": "images/plist_icon.png",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+	"icon": "images/logo.png",
     "categories": [
         "Languages"
     ],

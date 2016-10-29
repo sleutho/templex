@@ -18,15 +18,15 @@
     <array>
       <dict>
         <key>begin</key>
-        <string>(?&lt;!")(')(.*)</string>
+        <string>(?&lt;!")(')([^\}]*)</string>
         <key>beginCaptures</key>
         <dict>
-          <key>2</key>
+          <key>1</key>
           <dict>
             <key>name</key>
             <string>comment.line.apostrophe.tpl</string>
           </dict>
-          <key>3</key>
+          <key>2</key>
           <dict>
             <key>name</key>
             <string>comment.line.tpl</string>
@@ -42,6 +42,12 @@
         <string>for|if|endif|endloop|else</string>
         <key>name</key>
         <string>keyword.control.untitled</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>\b([0-9]*)\b</string>
+        <key>name</key>
+        <string>constant.numeric.untitled</string>
       </dict>
     </array>
     <key>scopeName</key>

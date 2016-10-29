@@ -45,7 +45,7 @@
       </dict>
       <dict>
         <key>match</key>
-        <string>\b([0-9]*)\b</string>
+        <string>\b([0-9]+)\b</string>
         <key>name</key>
         <string>constant.numeric.untitled</string>
       </dict>

@@ -45,6 +45,12 @@
       </dict>
       <dict>
         <key>match</key>
+        <string>%-?[1-9]+(\.[1-9]+)?[gfeE]</string>
+        <key>name</key>
+        <string>invalid.illegal.untitled</string>
+      </dict>
+      <dict>
+        <key>match</key>
         <string>\b([0-9]+)\b</string>
         <key>name</key>
         <string>constant.numeric.untitled</string>

@@ -18,6 +18,52 @@
     <array>
       <dict>
         <key>begin</key>
+        <string>(\{)</string>
+        <key>end</key>
+        <string>(\})</string>
+        <key>patterns</key>
+        <array>
+          <dict>
+            <key>include</key>
+            <string>#keyword</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#comment</string>
+          </dict>
+        </array>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>\b([0-9]+)\b</string>
+        <key>name</key>
+        <string>constant.numeric.tpl</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>%-?[1-9]+(\.[1-9]+)?[gfeE]</string>
+        <key>name</key>
+        <string>storage.type.tpl</string>
+      </dict>
+      <dict>
+        <key>match</key>
+        <string>([%=\*\-\+<])</string>
+        <key>name</key>
+        <string>keyword.operator</string>
+      </dict>
+    </array>
+    <key>repository</key>
+    <dict>
+      <key>keyword</key>
+      <dict>
+        <key>match</key>
+        <string>\b(for|if|endif|endloop|else)\b</string>
+        <key>name</key>
+        <string>keyword.control.tpl</string>
+      </dict>
+      <key>comment</key>
+      <dict>
+        <key>begin</key>
         <string>(?&lt;!")(')([^\}]*)</string>
         <key>beginCaptures</key>
         <dict>
@@ -37,31 +83,7 @@
         <key>end</key>
         <string>\n|\}</string>
       </dict>
-      <dict>
-        <key>match</key>
-        <string>for|if|endif|endloop|else</string>
-        <key>name</key>
-        <string>keyword.control.untitled</string>
-      </dict>
-      <dict>
-        <key>match</key>
-        <string>\b([0-9]+)\b</string>
-        <key>name</key>
-        <string>constant.numeric.untitled</string>
-      </dict>
-      <dict>
-        <key>match</key>
-        <string>%-?[1-9]+(\.[1-9]+)?[gfeE]</string>
-        <key>name</key>
-        <string>storage.type.untitled</string>
-      </dict>
-      <dict>
-        <key>match</key>
-        <string>([%=\*\-\+<])</string>
-        <key>name</key>
-        <string>keyword.operator</string>
-      </dict>
-    </array>
+    </dict>
     <key>scopeName</key>
     <string>source.tpl</string>
     <key>uuid</key>

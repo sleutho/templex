@@ -1,0 +1,21 @@
+fileTypes:
+    - tpl
+foldingStartMarker: '\{.*$'
+foldingStopMarker: '^.*\}'
+keyEquivalent: ^~T
+name: Templex
+patterns:
+    -
+        begin: "(?<!\")(')(.*)"
+        beginCaptures:
+            '2':
+                name: comment.line.apostrophe.tpl
+            '3':
+                name: comment.line.tpl
+        contentName: comment.line.apostrophe.tpl
+        end: '\n|\}'
+    -
+        match: 'for|if|endif|endloop|else'
+        name: keyword.control.untitled
+scopeName: source.tpl
+uuid: F01F22AC-7CBB-11D9-9B10-000A95E13C98

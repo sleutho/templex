@@ -17,6 +17,10 @@
     <key>patterns</key>
     <array>
       <dict>
+        <key>include</key>
+        <string>#function</string>
+      </dict>
+      <dict>
         <key>begin</key>
         <string>(\{)</string>
         <key>end</key>
@@ -51,7 +55,23 @@
             <key>include</key>
             <string>#string</string>
           </dict>
+          <dict>
+            <key>include</key>
+            <string>#function</string>
+          </dict>
+          <dict>
+            <key>include</key>
+            <string>#build-in-function</string>
+          </dict>
         </array>
+        <key>captures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>variable.language.tcl</string>
+          </dict>
+        </dict>
       </dict>
     </array>
     <key>repository</key>
@@ -62,6 +82,20 @@
         <string>\b(for|if|endif|endloop|else)\b</string>
         <key>name</key>
         <string>keyword.control.tpl</string>
+      </dict>
+      <key>function</key>
+      <dict>
+        <key>match</key>
+        <string>\b(function)\b</string>
+        <key>name</key>
+        <string>entity.name.type.tpl</string>
+      </dict>
+      <key>build-in-function</key>
+      <dict>
+        <key>match</key>
+        <string>\b(exit|echo)\b</string>
+        <key>name</key>
+        <string>entity.name.function.tpl</string>
       </dict>
       <key>comment</key>
       <dict>
@@ -97,12 +131,12 @@
         <key>match</key>
         <string>%-?[1-9]+(\.[1-9]+)?[gfeE]</string>
         <key>name</key>
-        <string>string.quoted.other.tpl</string>
+        <string>constant.numeric.other.tpl</string>
       </dict>
       <key>operator</key>
       <dict>
         <key>match</key>
-        <string>([%=\*\-\+<])</string>
+        <string>([=\*\-\+<])</string>
         <key>name</key>
         <string>keyword.control.tpl</string>
       </dict>

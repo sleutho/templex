@@ -41,15 +41,15 @@
           </dict>
           <dict>
             <key>include</key>
+            <string>#format</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>#constant</string>
           </dict>
           <dict>
             <key>include</key>
             <string>#operator</string>
-          </dict>
-          <dict>
-            <key>include</key>
-            <string>#format</string>
           </dict>
           <dict>
             <key>include</key>
@@ -131,7 +131,7 @@
         <key>match</key>
         <string>%[\+-]?[0-9]+(\.[0-9]+)?[sgfeE]</string>
         <key>name</key>
-        <string>string.unquoted.tpl</string>
+        <string>constant.numeric.other.tpl</string>
       </dict>
       <key>operator</key>
       <dict>

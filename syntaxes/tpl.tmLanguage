@@ -79,7 +79,7 @@
       <key>keyword</key>
       <dict>
         <key>match</key>
-        <string>\b(for|if|endif|endloop|else)\b</string>
+        <string>\b(for|if|endif|endloop|elseif|else|return)\b</string>
         <key>name</key>
         <string>keyword.control.tpl</string>
       </dict>

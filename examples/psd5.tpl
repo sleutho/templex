@@ -1,4 +1,3 @@
-
 function psd5(x,y,b,o)
 {
   if ( b==o)

@@ -6,7 +6,7 @@ This package provides syntax highlighting for Templex files in VSCode.
 
 ### Syntax highlighting for Templex files
 
-![feature X](images/feature-syntax-highlight.png)
+![Syntax highlighting](images/feature-syntax-highlight.png)
 
 ## Release Notes
 

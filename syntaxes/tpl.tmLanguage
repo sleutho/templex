@@ -93,7 +93,7 @@
       <key>build-in-function</key>
       <dict>
         <key>match</key>
-        <string>\b(exit|echo)\b</string>
+        <string>\b(abstorelative|addfilepath|append|attach_note_at|attach_note_to|close|curval|define|dictionary|display_as_output|echo|else|elseif|enddefine|endif|endloop|eval|exit|fileopen|filereadstring|for|foreach|format|getcwd|getvalueatindex|if|include|interpret_set|open|page|parameter|path|read|readfill|registerexternalfunction|registerexternalreader|relativetoabs|removefilepath|report_animate|safe_quotes_off|safe_quotes_on|set|sync2|sysarch|system|table|templex_off|templex_on|undef|while|abs|absarea|abstorerelative|acos|akima|akimaderivative|array|asc|asin|atan|atan2|atoi|avgdev|batch|batchpolyfit|bins|blackman|blockfftimag|blockfftmag|blockfftphase|blockfftreal|blockfrfimag|blockfrfmag|blockfrfphase|blockfrfreal|cat|cdf|centroid|chr|cint|coherence|convert|correl|cos|cosh|cr|curvelabel|curvelength|curveproduct|curvesum|curvesync|curvex|curvey|date|dba|dbb|dbc|dbu|dcorr|delta|derivative|determinant|deviation_metric|dfreq|dftimag|dftmag|dftphase|dftreal|dtor|eigvalimag|eigvalreal|eigvecimag|eigvecreal|eval|exp|expfit|extern|fcorr|fftimag|fftmag|fftphase|fftreal|fileclose|filefindstring|fileinfo|fileopen|fill|fold|freeze|freq|frfimag|frfmag|frfphase|frfreal|getenv|getval2|getvalue|hamming|hanning|hilbert|idft|ifft|iffunc|indexofmax|indexofmin|int|integral|intercepts|intersect|invcdf|inverse|irfilter|itoa|kaiser|lininterp|logint|log,ln|log10|mag|max|maxindex|mean|median|mid|min|mstep|nonlinfit|nr|numcurves|numpts|OLC|parzen|pdf|peaks|polyfit|polyrootsimag|polyrootsreal|polyval|projectcurvetosurface|psd|psd5|rand|read|readsim|readsubcase|relativetoabs|reldisp|remove_succ_dup_indx|replace|resampresp|resamprevs|resamptime|resvector|rms|rtod|saefilter|sgcm|signedarea|sin|sinh|size|skewness|smean|sort|spline|sqrt|stfreq|stft|storder|strchr|stringarray|strlen|strrchr|strsegrevs|strsegrps|strstr|stsegrps|stsegtime|subrange|sum|suppress|sysid|system|tan|tanh|tcleval|tclevalfile|tclgetvar|thaw|time|timer|tolower|toupper|typeof|variance|vtdft|vtfreq|vtorder|vtsegrps|vtsegtime|welch|zerocrossings|barchart|besselfilteranalog|besselfilterdigital|butterworth|clip|clip_continuous|clip_cumulative|duration|fir100|fuse|hic|hicd|histogram|iso6487|levelcrossing|nij|rainflow|rangepair|saefilt95|th_bandpass_butter|th_butter|th_cfc|th_fir100|th_four|th_sae|th_tche|timeatlevel)\b</string>
         <key>name</key>
         <string>entity.name.function.tpl</string>
       </dict>
@@ -138,7 +138,7 @@
         <key>match</key>
         <string>([=\*\-\+<])</string>
         <key>name</key>
-        <string>keyword.control.tpl</string>
+        <string>keyword.operator.tpl</string>
       </dict>
       <key>string</key>
       <dict>

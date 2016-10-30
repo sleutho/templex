@@ -1,5 +1,5 @@
 {
-    "name": "tpl",
+    "name": "templex",
     "displayName": "Templex",
     "description": "Templex Colorization",
     "version": "0.0.1",
@@ -21,13 +21,15 @@
         "vscode": "^1.5.0"
     },
 	"icon": "images/logo.png",
+	"preview": true,
     "categories": [
         "Languages"
     ],
 	"keywords": [
 		"Languages",
 		"Templex",
-		"HyperWorks"
+		"HyperWorks",
+        "Altair"
 	],
     "contributes": {
         "languages": [{

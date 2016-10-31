@@ -1,10 +1,9 @@
 {
     "name": "templex",
-    "displayName": "Templex Language Support",
-    "description": "Templex Colorization",
-    "version": "0.0.1",
+    "displayName": "Templex",
+    "description": "Templex Language Support",
+    "version": "0.1.0",
     "publisher": "sleutho",
-	"license": "MIT",
 	"author": {
 		"email": "sascha.leuthold@live.com",
 		"name": "Sascha Leuthold",

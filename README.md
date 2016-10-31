@@ -12,4 +12,4 @@ This package provides the following features for Templex files in VSCode:
 
 ### Snippets
 
-![Syntax highlighting](images/snippets.gif)
+![Snippets](images/snippets.gif)

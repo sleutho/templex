@@ -25,6 +25,10 @@
         <array>
           <dict>
             <key>include</key>
+            <string>#templex_off</string>
+          </dict>
+          <dict>
+            <key>include</key>
             <string>$self</string>
           </dict>
           <dict>
@@ -142,6 +146,41 @@
         <string>"</string>
         <key>name</key>
         <string>string.quoted.double.tpl</string>
+      </dict>
+      <key>templex_off</key>
+      <dict>
+        <key>begin</key>
+        <string>\b(templex_off)\s?\b(})?</string>
+        <key>beginCaptures</key>
+        <dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>entity.name.function.tpl</string>
+          </dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>variable.language.tcl</string>
+          </dict>
+        </dict>
+        <key>end</key>
+        <string>({)?\b\s?(templex_on)\b</string>
+        <key>endCaptures</key>
+        <dict>
+          <key>2</key>
+          <dict>
+            <key>name</key>
+            <string>entity.name.function.tpl</string>
+          </dict>
+          <key>1</key>
+          <dict>
+            <key>name</key>
+            <string>variable.language.tcl</string>
+          </dict>
+        </dict>
+        <key>contentName</key>
+        <string>comment.block.preprocessor.tpl</string>
       </dict>
     </dict>
     <key>scopeName</key>

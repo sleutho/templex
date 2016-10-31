@@ -15,16 +15,16 @@ function hyst_reg (x, y, newx, dvt)
     px = batch(ix, x, 0, 0.005);
     dpx = derivative(ix, px);
     n=0;
-    for(i=0;i<npt1;i++)
-      if(xlow<px[i] && px[i]<xup)
-        if(dvt == 1)
-          if(dpx[i]>0)
+    for (i=0;i<npt1;i++)
+      if (xlow<px[i] && px[i]<xup)
+        if (dvt == 1)
+          if (dpx[i]>0)
             rx[n] = x[i];
             ry[n] = y[i];
             n++;
           endif
-        elseif(dvt == -1)
-          if(dpx[i]<0)
+        elseif (dvt == -1)
+          if (dpx[i]<0)
             rx[n] = x[i];
             ry[n] = y[i];
             n++;

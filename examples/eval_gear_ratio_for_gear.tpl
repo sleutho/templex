@@ -1,4 +1,3 @@
-
 function eval_gear_ratio_for_gear(x,y,gear,dyno_speed)
 {
     num_gears = numpts(x)

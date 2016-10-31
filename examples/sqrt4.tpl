@@ -7,4 +7,7 @@
       x={x}, Square root of x={sqrt(x), %5.3f}
    {endif}
 {endloop}
-for
+
+foreach (test={1,2})
+    test
+endloop

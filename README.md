@@ -1,15 +1,15 @@
 # Templex Language Definition for VSCode
 
-This package provides syntax highlighting for Templex files in VSCode.
+This package provides the following features for Templex files in VSCode:
+- Syntax highlighting
+- Snippets 
 
 ## Features
 
-### Syntax highlighting for Templex files
+### Syntax highlighting
 
 ![Syntax highlighting](images/feature-syntax-highlight.png)
 
-## Release Notes
+### Snippets
 
-### 0.0.1
-
-Preview release
+![Syntax highlighting](images/feature-syntax-highlight.png)

@@ -1,0 +1,64 @@
+{
+	 "Function": {
+		"prefix": "function",
+		"body": [
+            "function ${name}(${args})",
+		"{",
+            "\treturn $0",
+            "}"
+		],
+		"description": "Function"
+	},
+	"For Loop": {
+		"prefix": "for",
+		"body": [
+            "for (${counter}=${init_value}; ${counter} < ${length}; ${counter}++)",
+            "\t$0",
+            "endloop"
+		],
+		"description": "For Loop"
+	},
+	"Foreach Loop": {
+		"prefix": "foreach",
+		"body": [
+            "foreach (${loop_var}=${matr_expr})",
+            "\t$0",
+            "endloop"
+		],
+		"description": "Foreach Loop"
+	},
+	"While Loop": {
+		"prefix": "while",
+		"body": [
+            "while (${expr})",
+            "\t$0",
+            "endloop"
+		],
+		"description": "While Loop"
+	},
+	"If Condition": {
+		"prefix": "if",
+		"body": [
+            "if (${expr})",
+            "\t$0",
+            "endif"
+		],
+		"description": "If Condition"
+	},
+	"ElseIf Condition": {
+		"prefix": "elseif",
+		"body": [
+            "elseif (${expr})",
+            "\t$0"
+		],
+		"description": "ElseIf Condition"
+	},
+	"Else Block": {
+		"prefix": "else",
+		"body": [
+            "else",
+            "\t$0"
+		],
+		"description": "Else Block"
+	}
+}

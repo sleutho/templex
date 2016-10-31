@@ -41,6 +41,12 @@
             "language": "tpl",
             "scopeName": "source.tpl",
             "path": "./syntaxes/tpl.tmLanguage"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "tpl",
+                "path": "./snippets/tpl.json"
+            }
+        ]
     }
 }

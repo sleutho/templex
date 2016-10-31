@@ -8,8 +8,8 @@ This package provides the following features for Templex files in VSCode:
 
 ### Syntax highlighting
 
-![Syntax highlighting](images/feature-syntax-highlight.png)
+![Syntax highlighting](images/syntax-highlight.png)
 
 ### Snippets
 
-![Syntax highlighting](images/feature-syntax-highlight.png)
+![Syntax highlighting](images/snippets.gif)

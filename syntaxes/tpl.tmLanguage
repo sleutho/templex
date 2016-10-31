@@ -6,10 +6,6 @@
     <array>
       <string>tpl</string>
     </array>
-    <key>foldingStartMarker</key>
-    <string>\{.*$</string>
-    <key>foldingStopMarker</key>
-    <string>^.*\}</string>
     <key>keyEquivalent</key>
     <string>^~T</string>
     <key>name</key>
@@ -22,9 +18,9 @@
       </dict>
       <dict>
         <key>begin</key>
-        <string>(\{)</string>
+        <string>({)</string>
         <key>end</key>
-        <string>(\})</string>
+        <string>(})</string>
         <key>patterns</key>
         <array>
           <dict>
@@ -99,9 +95,9 @@
       </dict>
       <key>comment</key>
       <dict>
-        <key>begin</key>
-        <string>(?&lt;!")(')([^\}\n]*)</string>
-        <key>beginCaptures</key>
+        <key>match</key>
+        <string>(?&lt;!")(')([^}\n]*)</string>
+        <key>captures</key>
         <dict>
           <key>1</key>
           <dict>
@@ -116,8 +112,6 @@
         </dict>
         <key>contentName</key>
         <string>comment.line.apostrophe.tpl</string>
-        <key>end</key>
-        <string>\n|\}</string>
       </dict>
       <key>constant</key>
       <dict>

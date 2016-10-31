@@ -75,7 +75,7 @@
       <key>keyword</key>
       <dict>
         <key>match</key>
-        <string>\b(for|if|endif|endloop|elseif|else|return)\b</string>
+        <string>\b(while|for|foreach|if|endif|endloop|elseif|else|return)\b</string>
         <key>name</key>
         <string>keyword.control.tpl</string>
       </dict>
